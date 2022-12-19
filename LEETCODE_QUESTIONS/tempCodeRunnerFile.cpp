@@ -1,0 +1,13 @@
+int s=0;
+    int e=n-1;
+    int mid=s+(e-s)/2;
+
+    if(s<e){
+        if(arr[mid] >= arr[0]){
+            s=mid+1;
+        } else {
+            e = mid;
+        }
+        mid=s+(e-s)/2;
+    } 
+    return s;
